@@ -1,0 +1,62 @@
+
+.logo {
+  padding-top: 16px;
+  padding-bottom: 16px;
+  display: block;
+
+  font-family: 'Raleway';
+  font-style: normal;
+  font-weight: 700;
+  font-size: 24px;
+  line-height: 28px;
+  letter-spacing: 0.03em;
+  text-decoration: none;
+  color: $mainTextColor;
+
+  @media screen and (min-width: 768px) {
+    margin-right: 88px;
+    padding-top: 26px;
+  }
+  @media screen and (min-width: 1200px) {
+    margin-right: 93px;
+  }
+
+  &__web {
+    color: $accentColor;
+  }
+}
+.page-header {
+  position: relative;
+}
+.header-nav__button .icon-cross {
+  display: none;
+}
+.header-nav__button.is-open .icon-cross {
+  display: block;
+}
+.header-nav__button.is-open .icon-menu {
+  display: none;
+}
+.header-nav {
+  display: flex;
+
+  @media screen and (max-width: 767px) {
+    justify-content: space-between;
+    align-items: center;
+  }
+}
+.header-nav__button {
+  display: flex;
+  justify-content: space-between;
+  align-items: center;
+  margin: 0;
+  padding: 0;
+  width: 40px;
+  height: 40px;
+  border: none;
+  background-color: #FFFF;
+
+  @media screen and (min-width: 768px) {
+    display: none;
+  }
+}

@@ -1,0 +1,83 @@
+
+.hero {
+  padding-top: 118px;
+  padding-bottom: 118px;
+  max-width: 1600px;
+
+  background-color: #2F303A;
+  background-image: linear-gradient(rgba(47,48,58,0.55), rgba(47,48,58,0.55)),
+  url(/images/page-1/hero-img-480.jpg);
+  background-size: cover;
+  background-position: center;
+
+  @media screen and (min-width: 480px) {
+    background-image: linear-gradient(rgba(47,48,58,0.55), rgba(47,48,58,0.55)),
+    url(/images/page-1/hero-img-768.jpg);
+    background-size: cover;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47,48,58,0.55), rgba(47,48,58,0.55)),
+      url(/images/page-1/hero-786-2x.jpg);
+    }
+  }
+
+  @media screen and (min-width: 787px) {
+    padding-top: 200px;
+    padding-bottom: 200px;
+    background-image: linear-gradient(rgba(47,48,58,0.55), rgba(47,48,58,0.55)),
+    url(/images/page-1/hero-img-1600.jpg);
+    background-size: cover;
+    background-position: center;
+    @media (min-device-pixel-ratio: 2),
+    (min-resolution: 192dpi),
+    (min-resolution: 2dppx) {
+      background-image: linear-gradient(rgba(47,48,58,0.55), rgba(47,48,58,0.55)),
+      url(/images/page-1/hero-1600-2x.jpg);
+    }
+  }
+
+  &__title {
+    margin-top: 0;
+    margin-bottom: 30px;
+    margin-right: auto;
+    margin-left: auto;
+
+    font-weight: 900;
+    font-size: 26px;
+    line-height: 1.62;
+    text-align: center;
+    letter-spacing: 0.06em;
+    text-transform: uppercase;
+
+    color: #FFFFFF;
+
+    @media screen and (min-width: 1200px) {
+      font-size: 44px;
+      line-height: 1.36;
+    }
+  }
+
+  &__button {
+    display: block;
+    margin-top: 0;
+    margin-bottom: 0;
+    margin-right: auto;
+    margin-left: auto;
+    padding: 10px 32px;
+
+    font-family: 'Roboto';
+    font-weight: 700;
+    font-size: 16px;
+    line-height: 1.88;
+    letter-spacing: 0.06em;
+
+    border: none;
+    background-color: $accentColor;
+    color: #FFFFFF;
+    box-shadow: 0px 4px 4px rgba(0, 0, 0, 0.15);
+    border-radius: 4px;
+    cursor: pointer;
+  }
+}
