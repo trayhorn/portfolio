@@ -22,7 +22,10 @@
 
 .main-nav {
   @media screen and (max-width: 767px) {
+    // margin-left: auto;
+    // margin-right: auto;
     margin-bottom: 302px;
+    // width: 450px;
   }
   @media screen and (min-width: 768px) {
     display: flex;
@@ -62,6 +65,11 @@
 }
 
 .contacts-nav {
+  // @media screen and (max-width: 767px) {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   width: 450px;
+  // }
   @media screen and (min-width: 768px) {
     display: flex;
     flex-direction: column;
@@ -152,6 +160,12 @@
   @media screen and (min-width: 768px) {
     display: none;
   }
+
+  // @media screen and (max-width: 767px) {
+  //   margin-left: auto;
+  //   margin-right: auto;
+  //   width: 450px;
+  // }
 
   &__link {
     padding-right: 10px;
